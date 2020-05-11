@@ -8,28 +8,28 @@
 
 import UIKit
 
-class MenuView: UIView {
+open class MenuView: UIView {
     
-    private(set) var navigationBar: UIView!
+    private(set) public var navigationBar: UIView!
     private(set) var tabs: ColorTabs!
-    private(set) var scrollMenu: ScrollMenu!
+    private(set) public var scrollMenu: ScrollMenu!
     private(set) var circleMenuButton: UIButton!
     
     private var shadowView: VerticalGradientView!
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         commonInit()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         commonInit()
     }
     
-    override func willMove(toSuperview newSuperview: UIView?) {
+    public override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         
         layoutIfNeeded()
