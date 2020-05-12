@@ -11,7 +11,7 @@ import UIKit
 open class MenuView: UIView {
     
     private(set) public var navigationBar: UIView!
-    private(set) var tabs: ColorTabs!
+    private(set) public var tabs: ColorTabs!
     private(set) public var scrollMenu: ScrollMenu!
     private(set) var circleMenuButton: UIButton!
     
